@@ -22,7 +22,7 @@ inputs:
   # ToDo: Remove disable cache option when https://github.com/actions/setup-python/issues/361 is fixed
   poetry_cache_enabled:
     description: "Caching of Poetry environment"
-    default: "true"
+    default: "false"
 
 outputs:
   python-version:
