@@ -36,16 +36,6 @@ jobs:
       - name: Install dependencies
         if: steps.cache.outputs.cache-hit != 'true'
         run: poetry install --no-interaction --no-ansi
-      - name: Check for markupsafe package
-        run: |
-          python -m pip show markupsafe
-      - name: Determine version
-        id: version
-        run: |
-          version=$(poetry version --short)
-          echo "version=$version" >> $GITHUB_ENV
-          echo "::set-output name=version::$version"
-        shell: bash
       - name: Build binary with pyinstaller
         run: |
           source $GITHUB_ENV
