@@ -17,7 +17,6 @@ markupsafe = "*"
 [tool.poetry.dev-dependencies]
 pytest = "*"
 pytest-cov = "*"
-
 ruff = "*"
 
 
