@@ -14,7 +14,6 @@ python = "~3.12"
 markupsafe = "*"
 
 
-
 [tool.poetry.dev-dependencies]
 pytest = "*"
 pytest-cov = "*"
