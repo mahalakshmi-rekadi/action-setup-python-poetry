@@ -1,4 +1,4 @@
-[tool.poetry.name]
+[tool.poetry]
 name = "action-setup-python-poetry"
 version = "0.1.0"
 description = "GitHub Actions to setup Python and Poetry"
