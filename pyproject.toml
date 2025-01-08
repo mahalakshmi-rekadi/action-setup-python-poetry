@@ -1,19 +1,19 @@
-[poetry.name]
+[tool.poetry.name]
 name = "action-setup-python-poetry"
 version = "0.1.0"
 description = "GitHub Actions to setup Python and Poetry"
 authors = ["moneymeets GmbH <service@moneymeets.com>"]
 
 
-[poetry.scripts]
+[tool.poetry.scripts]
 invalid_package_versions = "action_setup_python_poetry.invalid_package_versions:main"
 
 
-[poetry.dependencies]
+[tool.poetry.dependencies]
 python = "~3.12"
 markupsafe = "*"
 
-[poetry.group.dev.dependencies]
+[tool.poetry.group.dev.dependencies]
 pytest = "*"
 pytest-cov = "*"
 ruff = "*"
