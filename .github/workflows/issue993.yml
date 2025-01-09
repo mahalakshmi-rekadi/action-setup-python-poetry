@@ -38,7 +38,7 @@ jobs:
       - name: Add Poetry to PATH
         run: echo "${{ runner.tool_cache }}/poetry/bin" >> $GITHUB_PATH
       - name: Verify pyinstaller
-        run: pyinstaller --version
+        run: poetry run pyinstaller --version
       - name: Determine version
         id: version
         run: |
