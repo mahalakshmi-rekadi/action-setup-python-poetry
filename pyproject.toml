@@ -12,6 +12,7 @@ invalid_package_versions = "action_setup_python_poetry.invalid_package_versions:
 [tool.poetry.dependencies]
 python = "~3.12"
 markupsafe = "*"
+pyinstaller = "^5.11.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "*"
