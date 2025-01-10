@@ -51,5 +51,5 @@ jobs:
           source $GITHUB_ENV
           os_name=$(echo ${{ runner.os }} | tr '[:upper:]' '[:lower:]')
           os_arch=$(echo ${{ runner.arch }} | tr '[:upper:]' '[:lower:]')
-          poetry run pyinstaller --add-data "ksso/success_message.html:ksso" --onefile ksso/main.py --name ksso-$os_name-$os_arch-$version
+          poetry run pyinstaller   --target-architecture universal2 --add-data "ksso/success_message.html:ksso" --onefile ksso/main.py --name ksso-$os_name-$os_arch-$version
         shell: bash
